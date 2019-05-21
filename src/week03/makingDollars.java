@@ -14,14 +14,14 @@ public class makingDollars {
 		{
 			// or we can do
 			amount=Math.pow(2,i-1);
-			System.out.printf("$$ earnings on day : "+i+" is $ %f",amount);
+			System.out.printf("$$ earnings on day : "+i+" is $ %.0f\n",amount);
 			totalAmount+=amount;
 		//	amount=amount*2;
 			
 			
 		}
 		System.out.println("Total Earnings : $"+totalAmount);
-		System.out.printf("Total Earnings : %f" ,totalAmount);
+		System.out.printf("Total Earnings : %.0f" ,totalAmount);
 
 	}
 
