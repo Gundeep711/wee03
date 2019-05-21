@@ -28,6 +28,11 @@ public class decisionStatement {
 		System.out.println("SubTotal : $" + subTotal);
 		System.out.println("Discount : %" + discountedAmount);
 		System.out.println("Final Amount : $" + finalAmount);
+		
+		//round to two deimal points
+		//printf tells the system that you want to format the string
+		System.out.printf("Final price: %.2f",finalAmount); // This is called String Formatting 
+		// %d is for integer and %f is for float or decimal and for string formatting we use printf
 
 	}
 
