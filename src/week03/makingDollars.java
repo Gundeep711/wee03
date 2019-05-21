@@ -8,16 +8,20 @@ public class makingDollars {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("How many days you will work :");
 		int days=sc.nextInt(); 
-		int amount = 1;
-		int totalAmount=0;
+		double amount = 1.0;
+		double totalAmount=0.0;
 		for(int i=1;i<=days;i++)
 		{
-			System.out.println("$$ earnings on day : "+i+" is $"+amount);
+			// or we can do
+			amount=Math.pow(2,i-1);
+			System.out.printf("$$ earnings on day : "+i+" is $ %f",amount);
 			totalAmount+=amount;
-			amount=amount*2;
+		//	amount=amount*2;
+			
 			
 		}
-		System.out.println("Total Earnings : "+totalAmount);
+		System.out.println("Total Earnings : $"+totalAmount);
+		System.out.printf("Total Earnings : %f" ,totalAmount);
 
 	}
 
